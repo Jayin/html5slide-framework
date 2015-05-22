@@ -1,0 +1,74 @@
+<!-- extend "../../html/layout/layout.base.html" -->
+
+<!-- section "head" -->
+<meta name="keywords" content="bxn" />
+<meta name="description" content="我为最爱的人奉上了 求婚之舞，快来见证我们的幸福时刻吧！" />
+<title>奉舞成婚</title>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b6f39e8e4de3ced94d1097d7f7174e0d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- /section -->
+
+<!-- section "body" -->
+<script type="text/javascript">
+document.write([
+	'<link rel="stylesheet" href="' + G.CDN_BASE + '/app/bxn-201502/style/main.css" />'
+].join(''));
+</script>
+
+<div class="page-wrapper">
+	
+</div>
+<script type="text/javascript">
+document.write([
+    '<audio id="audio1" src="' + G.CDN_ORIGIN + '/static/app/bxn-201502/image/bg.mp3" loop ></audio>'
+].join(''));
+</script>
+<button id="audio-btn" class="img-btn audio-btn on" onclick="if($(this).hasClass('on')) {$('#audio1')[0].pause(); $(this).removeClass('on')} else {$('#audio1')[0].play(); $(this).addClass('on')}"></button>
+
+<script type="text/javascript">
+require(['jquery', 'app', 'skateboard'], function($, app, Skateboard) {
+
+	$.extend(G.MD5_MAP, %{{md5map.bxn-201502}}%);
+
+	Skateboard.core.init({
+		container: $('.page-wrapper'),
+		modBase: '../../../app/bxn-201502/script/',
+		animate: {
+			type: 'fade',
+			timingFunction: 'linear',
+			duration: 300
+		},
+		transformAnimation: false,
+		isSupportHistoryState: false,
+		onBeforeViewChange: function() {
+			app.ajax.hideLoading();
+			app.alerts.alert.hide();
+			app.alerts.modal.hide();
+		},
+		constructContentDom: function(modName, args, opt) {
+			var contentDom = $([
+				'<div class="sb-mod sb-mod--' + modName.replace(/\//g, '-') + '" data-sb-mod="' + modName + '" data-sb-scene="0" onscroll="require(\'app\').mod.scroll(this.scrollTop);">',
+					'<div class="sb-mod__body">',
+						'<div class="body-inner" data-sb-mod-not-renderred>',
+						'</div>',
+					'</div>',
+				'</div>'
+			].join('')).prependTo($('.page-wrapper'));
+			return contentDom;
+		}
+	});
+	
+}, function() {
+
+});
+</script>
+<!-- include "./script/mod/wx/main.js" -->
+<!-- /section -->

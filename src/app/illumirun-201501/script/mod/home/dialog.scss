@@ -1,0 +1,19 @@
+.dialog {
+	background-image: url(../../../image/dialog-bg.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	width: 288px;
+	height: 270px;
+	top: 25%;
+	left: 50%;
+	margin-left: -144px;
+	.dialog__close {
+		width: 27px;
+		height: 27px;
+		position: absolute;
+		bottom: 11px; 
+		right: 14px;
+	}
+}

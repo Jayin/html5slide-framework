@@ -1,0 +1,149 @@
+.sb-mod.sb-mod--actionBlue {
+    .img-action {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .img-avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 11%;
+        width: 18%;
+    }
+    .action-straight {
+        top: 9.5%;
+        left: 40%;
+    }
+    .action-top_left {
+        top: 9%;
+        left: 38%;
+        transform: rotate(-10deg);
+    }
+    .action-mid_left {
+        top: 27%;
+        left: 15%;
+        transform: rotate(-45deg);
+    }
+    .action-lower_left {
+        top: 29%;
+        left: 22%;
+        transform: rotate(-45deg);
+    }
+    .action-top_right {
+        top: 9.8%;
+        left: 41.2%;
+    }
+    .action-mid_right {
+        top: 23%;
+        left: 61%;
+        transform: rotate(45deg);
+    }
+    .action-lower_right {
+        top: 32%;
+        left: 63%;
+        transform: rotate(50deg);
+    }
+    .layer2 {
+        background-image: url(../../../image/bg_action.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .action-btns {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .btn-action {
+        position: absolute;
+        width: 20%;
+        height: 10%;
+    }
+    .btn-left {
+        left: 5%;
+    }
+    .btn-right {
+        right: 5%;
+    }
+    .btn-top {
+        top: 14%;
+    }
+    .btn-mid {
+        top: 40%
+    }
+    .btn-lower {
+        top: 69%
+    }
+    .option-container {
+        position: absolute;
+        bottom: 0%;
+        left: 13%;
+        width: 250px;
+        height: 120px;
+    }
+    .round {
+        background-image: url(../../../image/round.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        float: left;
+        height: 50%;
+        width: 16%;
+        padding-top: 3%;
+    }
+    .round-top_left {
+        background-image: url(../../../image/round_top_left.png);
+    }
+    .round-mid_left {
+        background-image: url(../../../image/round_mid_left.png);
+    }
+    .round-lower_left {
+        background-image: url(../../../image/round_lower_left.png);
+    }
+    .round-top_right {
+        background-image: url(../../../image/round_top_right.png);
+    }
+    .round-mid_right {
+        background-image: url(../../../image/round_mid_right.png);
+    }
+    .round-lower_right {
+        background-image: url(../../../image/round_lower_right.png);
+    }
+    .round-group {
+        background-image: url(../../../image/round_group_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 73px;
+        width: 100%;
+        padding-left: 5%;
+        padding-top: 4px;
+    }
+    .option-group {
+        background-image: url(../../../image/group_comfirm.png);
+        background-size: cover;
+        height: 32px;
+        width: 100%;
+        margin-top: 4px;
+    }
+    @media (min-height: 480px) {}
+    @media (min-height: 568px) {}
+    @media (min-height: 667px) {
+        .option-container {
+            left: 15%;
+        }
+    }
+    @media (min-height: 736px) {
+        .option-container {
+            left: 18%;
+        }
+    }
+}
